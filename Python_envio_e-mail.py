@@ -1,5 +1,3 @@
-
-
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -39,10 +37,10 @@ def meu_codigo():
     except Exception as e:
         # Se ocorrer um erro, envie um e-mail de alerta!
         erro = traceback.format_exc()  # Obtém o rastreamento do erro
-        enviar_email('destinatario@example.com', 'Erro no script', erro)
+        enviar_email('destinatario@email.com', 'Erro no script', erro)
     else:
         # Se não houver erro, envie um e-mail de sucesso!
-        enviar_email('destinatario@example.com', 'Script executado com sucesso', 'O script foi executado com sucesso!')
+        enviar_email('destinatario@email.com', 'Script executado com sucesso')
 
 if __name__ == "__main__":
     meu_codigo()
