@@ -31,7 +31,13 @@ def enviar_email(destinatario, assunto, mensagem):
         print("Erro ao enviar e-mail:", e)
 
 def meu_codigo():
-    # *****Seu código aqui*****
+    # definição de números
+    num1 = 600
+    num2 = 66
+    # soma
+    soma = num1 + num2 
+    # impressão do resultado
+    print(soma)
     try:
         resultado = 10 / 0
     except Exception as e:
@@ -40,7 +46,7 @@ def meu_codigo():
         enviar_email('destinatario@email.com', 'Erro no script', erro)
     else:
         # Se não houver erro, envie um e-mail de sucesso!
-        enviar_email('destinatario@email.com', 'Script executado com sucesso')
+        enviar_email('destinatario@email.com', 'Script executado com sucesso', 'O script foi executado com sucesso!')
 
 if __name__ == "__main__":
     meu_codigo()
